@@ -29,22 +29,24 @@ The project is organized into several key directories:
 
 ## Installation
 
-1. Clone the repository and open the main directory: 
-    ```
+1. Clone the repository and open the main directory:
+
+   ```
    git clone https://github.com/ridchatt/PlaywrightAssignment.git
    cd PlaywrightAssignment
    ```
 
-2. Install the dependencies: 
-    ```
-    npm install
-    ```
+2. Install the dependencies:
 
-3. Ensure Playwright browsers are installed: 
-    ```
-    npx playwright install
-    ```
-    
+   ```
+   npm install
+   ```
+
+3. Ensure Playwright browsers are installed:
+   ```
+   npx playwright install
+   ```
+
 ## Running the Tests
 
 Running All Tests : npx playwright test
