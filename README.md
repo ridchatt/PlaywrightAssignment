@@ -4,7 +4,7 @@ This repository contains automated tests for both UI and API using Playwright. T
 
 ## Table of Contents
 
-- [Project Structure](#project-structure)
+- [Project Structure Overview](#project-structure-overview)
 - [Installation](#installation)
 - [Running the Tests](#running-the-tests)
   - [UI Tests](#ui-tests)
@@ -13,24 +13,18 @@ This repository contains automated tests for both UI and API using Playwright. T
 - [Contributing](#contributing)
 - [License](#license)
 
-## Project Structure
+## Project Structure Overview
 
-Playwright-Assignment/
-├── pages/
-│ ├── HomePage.js
-│ ├── CartPage.js
-│ └── ...
-├── tests/
-│ ├── UI/
-│ │ ├── addToCart.spec.js
-│ │ └── ...
-│ ├── API/
-│ │ ├── reqresAPITests.spec.js
-│ │ └── ...
-├── reports/
-│ └── ...
-├── README.md
-└── package.json
+The project is organized into several key directories:
+
+- **pages/**: Contains JavaScript files defining Page Objects for UI tests. Each file corresponds to a specific page or component of the application under test.
+
+- **tests/**
+  - **UI/**: Houses test scripts written for UI automation using Playwright. Each test file typically corresponds to a specific feature or workflow.
+  - **API/**: Contains test scripts for API testing. These scripts interact with the Reqres API endpoints to validate functionality.
+
+- **playwright-report/**: This directory stores generated HTML report from test runs, detailing test outcomes and metrics.
+
 
 ## Running the Tests
 
