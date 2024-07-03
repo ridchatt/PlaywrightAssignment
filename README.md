@@ -15,8 +15,6 @@ This repository contains automated tests for both UI and API using Playwright. T
 
 ## Project Structure
 
-The project is organized into the following directories:
-
 Playwright-Assignment/
 ├── pages/
 │ ├── HomePage.js
