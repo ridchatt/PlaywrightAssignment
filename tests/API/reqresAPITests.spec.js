@@ -1,3 +1,4 @@
+// @ts-check
 const { test, expect } = require("@playwright/test");
 
 var userId;
@@ -8,7 +9,7 @@ test("Get users", async ({ request }) => {
   expect(getResponse.status()).toBe(200);
 });
 
-test("Create users", async ({ request }) => {
+test("Create user", async ({ request }) => {
   const postResponse = await request.post("https://reqres.in/api/users", {
     data: {
       name: "morpheus",
@@ -25,7 +26,7 @@ test("Create users", async ({ request }) => {
   userId = response.id;
 });
 
-test("Update users", async ({ request }) => {
+test("Update user", async ({ request }) => {
   const putResponse = await request.put(
     "https://reqres.in/api/users/" + userId,
     {
@@ -42,7 +43,7 @@ test("Update users", async ({ request }) => {
   expect(putResponse.status()).toBe(200);
 });
 
-test("Delete users", async ({ request }) => {
+test("Delete user", async ({ request }) => {
   const deleteResponse = await request.delete(
     "https://reqres.in/api/users/" + userId
   );

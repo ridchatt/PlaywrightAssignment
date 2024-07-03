@@ -19,8 +19,8 @@ The project is organized into several key directories:
 
 - **tests**: Contains test files that define the test cases using the page objects.
 
-  - **UI**: Contains test scripts written for UI automation using Playwright. Each test file typically corresponds to a specific feature or workflow.
-  - **API**: Contains test scripts for API testing. These scripts interact with the Reqres API endpoints to validate functionality.
+  - **UI**: Contains test scripts written for UI automation using Playwright. Each test file typically corresponds to a specific feature or workflow. The scenarios which I have considered includes "Item added to cart successfully" , "Item removed from cart successfully" and "Item successfully ordered".
+  - **API**: Contains test scripts for API testing. These scripts interact with the Reqres API endpoints to validate functionality. The scenarios which I have considered includes "Getting lists of users" , "Creating user" , "Updating the created user" and "Deleting the created user"
 
 - **playwright-report**: This directory stores generated HTML report from test runs, detailing test outcomes and metrics.
 

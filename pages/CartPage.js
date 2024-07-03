@@ -33,13 +33,11 @@ exports.CartPage = class CartPage {
   }
 
   async removeProductFromCart(productName) {
-    // Use a specific locator based on the product name
     const removeFromCartBtn = `//div[contains(text(), "${productName}")]/ancestor::div[@class="cart_item_label"]//button[text()="Remove"]`;
     await this.page.locator(removeFromCartBtn).click();
   }
 
   verifyRemovedProductFromCart(productName) {
-    // Use a specific locator based on the product name
     return `//div[contains(text(), "${productName}")]/ancestor::div[@class="cart_item_label"]//button[text()="Remove"]`;
   }
 

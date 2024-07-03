@@ -6,7 +6,6 @@ import { HomePage } from "../../pages/HomePage";
 import { CartPage } from "../../pages/CartPage";
 
 test.beforeEach(async ({ page }) => {
-  //Login
   const login = new LoginPage(page);
   await login.gotoLoginPage();
   await login.login("standard_user", "secret_sauce");
@@ -14,9 +13,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("Item added to cart successfully", async ({ page }) => {
-  //Login
   const login = new LoginPage(page);
-  //Home
   const home = new HomePage(page);
 
   await expect(page.locator(home.sort)).toBeVisible();
@@ -32,11 +29,8 @@ test("Item added to cart successfully", async ({ page }) => {
 });
 
 test("Item removed from cart successfully", async ({ page }) => {
-  //Login
   const login = new LoginPage(page);
-  //Home
   const home = new HomePage(page);
-
   const cart = new CartPage(page);
 
   await expect(page.locator(home.sort)).toBeVisible();
@@ -56,11 +50,8 @@ test("Item removed from cart successfully", async ({ page }) => {
 });
 
 test("Item successfully ordered", async ({ page }) => {
-  //Login
   const login = new LoginPage(page);
-  //Home
   const home = new HomePage(page);
-
   const cart = new CartPage(page);
 
   await expect(page.locator(home.sort)).toBeVisible();

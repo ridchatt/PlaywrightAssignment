@@ -11,12 +11,10 @@ exports.HomePage = class HomePage {
   }
 
   addToCartBtnIcon(productName) {
-    // Use a specific locator based on the product name
     return `//div[contains(text(), "${productName}")]/ancestor::div[@class="inventory_item"]//button[text()="Add to cart"]`;
   }
 
   async addProductToCart(productName) {
-    // Use a specific locator based on the product name
     const addToCartBtn = `//div[contains(text(), "${productName}")]/ancestor::div[@class="inventory_item"]//button[text()="Add to cart"]`;
     await this.page.locator(addToCartBtn).click();
   }
