@@ -17,76 +17,21 @@ This repository contains automated tests for both UI and API using Playwright. T
 
 The project is organized into the following directories:
 
-├───node_modules
-│   ├───.bin
-│   ├───@playwright
-│   │   └───test
-│   ├───@types
-│   │   └───node
-│   │       ├───assert
-│   │       ├───dns
-│   │       ├───fs
-│   │       ├───readline
-│   │       ├───stream
-│   │       └───timers
-│   ├───playwright
-│   │   ├───lib
-│   │   │   ├───common
-│   │   │   ├───isomorphic
-│   │   │   ├───loader
-│   │   │   ├───matchers
-│   │   │   ├───plugins
-│   │   │   ├───reporters
-│   │   │   │   └───versions
-│   │   │   ├───runner
-│   │   │   ├───third_party
-│   │   │   ├───transform
-│   │   │   └───worker
-│   │   └───types
-│   ├───playwright-core
-│   │   ├───bin
-│   │   ├───lib
-│   │   │   ├───cli
-│   │   │   ├───client
-│   │   │   ├───common
-│   │   │   ├───generated
-│   │   │   ├───image_tools
-│   │   │   ├───protocol
-│   │   │   ├───remote
-│   │   │   ├───server
-│   │   │   │   ├───android
-│   │   │   │   ├───chromium
-│   │   │   │   ├───dispatchers
-│   │   │   │   ├───electron
-│   │   │   │   ├───firefox
-│   │   │   │   ├───har
-│   │   │   │   ├───isomorphic
-│   │   │   │   ├───recorder
-│   │   │   │   ├───registry
-│   │   │   │   ├───trace
-│   │   │   │   │   ├───recorder
-│   │   │   │   │   ├───test
-│   │   │   │   │   └───viewer
-│   │   │   │   └───webkit
-│   │   │   ├───third_party
-│   │   │   ├───utils
-│   │   │   │   └───isomorphic
-│   │   │   ├───utilsBundleImpl
-│   │   │   └───vite
-│   │   │       ├───htmlReport
-│   │   │       ├───recorder
-│   │   │       │   └───assets
-│   │   │       └───traceViewer
-│   │   │           └───assets
-│   │   └───types
-│   └───undici-types
-├───pages
-├───playwright-report
-├───test-results
-├───tests
-│   ├───API
-│   └───UI
-└───tests-examples
+├── pages/
+│ ├── HomePage.js
+│ ├── CartPage.js
+│ └── ...
+├── tests/
+│ ├── UI/
+│ │ ├── addToCart.spec.js
+│ │ └── ...
+│ ├── API/
+│ │ ├── reqresAPITests.spec.js
+│ │ └── ...
+├── reports/
+│ └── ...
+├── README.md
+└── package.json
 
 ## Running the Tests
 
