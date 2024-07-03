@@ -36,7 +36,7 @@ npx playwright test tests/UI
 To run the API tests, use the following command:
 npx playwright test tests/API
 
-### Reporting
+## Reporting
 
 The directory playwright-report contains a generated HTML report from test runs, detailing test outcomes and metrics.
 
