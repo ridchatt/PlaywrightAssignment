@@ -35,10 +35,16 @@ The project is organized into several key directories:
    cd PlaywrightAssignment
    ```
 
-2. Install the dependencies: npm install
+2. Install the dependencies: 
+    ```
+    npm install
+    ```
 
-3. Ensure Playwright browsers are installed: npx playwright install
-
+3. Ensure Playwright browsers are installed: 
+    ```
+    npx playwright install
+    ```
+    
 ## Running the Tests
 
 Running All Tests : npx playwright test
