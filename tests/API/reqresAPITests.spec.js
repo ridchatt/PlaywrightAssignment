@@ -46,6 +46,7 @@ test("Update users", async({request}) => {
 })
 
 test("Delete users", async({request}) => {
+    
     const deleteResponse = await request.delete('https://reqres.in/api/users/'+userId);
     expect(deleteResponse.status()).toBe(204);
 })
