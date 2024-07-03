@@ -15,28 +15,44 @@ This repository contains automated tests for both UI and API using Playwright. T
 
 The project is organized into several key directories:
 
-- **pages**: Contains JavaScript files defining Page Objects for UI tests. Each file corresponds to a specific page or component of the application under test.
+- **pages**: Contains page object classes that define selectors and methods for interacting with various pages of the application.
 
-- **tests**
-  - **UI**: Houses test scripts written for UI automation using Playwright. Each test file typically corresponds to a specific feature or workflow.
+- **tests**: Contains test files that define the test cases using the page objects.
+
+  - **UI**: Contains test scripts written for UI automation using Playwright. Each test file typically corresponds to a specific feature or workflow.
   - **API**: Contains test scripts for API testing. These scripts interact with the Reqres API endpoints to validate functionality.
 
 - **playwright-report**: This directory stores generated HTML report from test runs, detailing test outcomes and metrics.
 
+- **playwright.config.js**: Configuration file for Playwright.
+- **package.json**: Node.js project metadata and dependencies.
+
+## Installation
+
+1. Clone the repository: git clone https://github.com/ridchatt/PlaywrightAssignment.git
+   cd PlaywrightAssignment
+
+2. Install the dependencies: npm install
+
+3. Ensure Playwright browsers are installed: npx playwright install
 
 ## Running the Tests
+
+Running All Tests : npx playwright test
+
+Running Tests in Headed Mode: npx playwright test --headed
 
 ### UI Tests
 
 To run the UI tests, use the following command:
-npx playwright test tests/UI
+npx playwright test tests/UI/sauceDemoUITests.spec.js
 
 ### API Tests
 
 To run the API tests, use the following command:
-npx playwright test tests/API
+npx playwright test tests/API/reqresAPITests.spec.js
 
 ## Reporting
 
 The directory playwright-report contains a generated HTML report from test runs, detailing test outcomes and metrics.
-
+You can find json and xml report under the project structure.
