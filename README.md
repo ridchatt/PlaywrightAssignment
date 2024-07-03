@@ -10,20 +10,18 @@ This repository contains automated tests for both UI and API using Playwright. T
   - [UI Tests](#ui-tests)
   - [API Tests](#api-tests)
 - [Reporting](#reporting)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Structure Overview
 
 The project is organized into several key directories:
 
-- **pages/**: Contains JavaScript files defining Page Objects for UI tests. Each file corresponds to a specific page or component of the application under test.
+- **pages**: Contains JavaScript files defining Page Objects for UI tests. Each file corresponds to a specific page or component of the application under test.
 
-- **tests/**
-  - **UI/**: Houses test scripts written for UI automation using Playwright. Each test file typically corresponds to a specific feature or workflow.
-  - **API/**: Contains test scripts for API testing. These scripts interact with the Reqres API endpoints to validate functionality.
+- **tests**
+  - **UI**: Houses test scripts written for UI automation using Playwright. Each test file typically corresponds to a specific feature or workflow.
+  - **API**: Contains test scripts for API testing. These scripts interact with the Reqres API endpoints to validate functionality.
 
-- **playwright-report/**: This directory stores generated HTML report from test runs, detailing test outcomes and metrics.
+- **playwright-report**: This directory stores generated HTML report from test runs, detailing test outcomes and metrics.
 
 
 ## Running the Tests
@@ -37,4 +35,8 @@ npx playwright test tests/UI
 
 To run the API tests, use the following command:
 npx playwright test tests/API
+
+### Reporting
+
+The directory playwright-report contains a generated HTML report from test runs, detailing test outcomes and metrics.
 
