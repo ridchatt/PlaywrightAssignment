@@ -17,22 +17,23 @@ This repository contains automated tests for both UI and API using Playwright. T
 
 The project is organized into the following directories:
 
-Playwright-Assignment/
-├── pages/
-│ ├── HomePage.js
-│ ├── CartPage.js
-│ └── ...
-├── tests/
-│ ├── UI/
-│ │ ├── addToCart.spec.js
-│ │ └── ...
-│ ├── API/
-│ │ ├── reqresAPITests.spec.js
-│ │ └── ...
-├── reports/
-│ └── ...
-├── README.md
-└── package.json
+├── src
+│   ├── controller
+│   │   ├── **/*.css
+│   ├── views
+│   ├── model
+│   ├── index.js
+├── public
+│   ├── css
+│   │   ├── **/*.css
+│   ├── images
+│   ├── js
+│   ├── index.html
+├── dist (or build
+├── node_modules
+├── package.json
+├── package-lock.json
+└── .gitignore
 
 ## Running the Tests
 
